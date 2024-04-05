@@ -1096,7 +1096,7 @@
         <match field="data">16777234</match>
     </input>
     <output type="gz.msgs.Twist" topic="/model/marble_husky_sensor_config_1/cmd_vel">
-        linear: {x: 0 y: 0 z: 0} angular: {x: 0 y: 0 z: 5}
+        linear: {x: 0 y: 0 z: 0} angular: {x: 0 y: 0 z: 1}
     </output>
 </plugin>
 <plugin filename="gz-sim-triggered-publisher-system"
@@ -1114,7 +1114,7 @@
         <match field="data">16777236</match>
     </input>
     <output type="gz.msgs.Twist" topic="/model/marble_husky_sensor_config_1/cmd_vel">
-        linear: {x: 0 y: 0 z: 0} angular: {x: 0 y: 0 z: -5}
+        linear: {x: 0 y: 0 z: 0} angular: {x: 0 y: 0 z: -1}
     </output>
 </plugin>
 <plugin filename="gz-sim-triggered-publisher-system"
