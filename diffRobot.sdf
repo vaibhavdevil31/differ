@@ -1114,7 +1114,7 @@
         <match field="data">16777236</match>
     </input>
     <output type="gz.msgs.Twist" topic="/model/marble_husky_sensor_config_1/cmd_vel">
-        linear: {x: 0 y: 5 z: 0} angular: {x: 0 y: 0 z: 0}
+        linear: {x: 0 y: 0 z: 0} angular: {x: 0 y: 0 z: -5}
     </output>
 </plugin>
 <plugin filename="gz-sim-triggered-publisher-system"
@@ -1123,9 +1123,17 @@
         <match field="data">16777237</match>
     </input>
     <output type="gz.msgs.Twist" topic="/model/marble_husky_sensor_config_1/cmd_vel">
-        linear: {x: 0 y: 0 z: 0} angular: {x: 0 y: 0 z: -5}
+        linear: {x: -5 y: 0 z: 0} angular: {x: 0 y: 0 z: 0}
+    </output>
+</plugin>
+<plugin filename="gz-sim-triggered-publisher-system"
+        name="gz::sim::systems::TriggeredPublisher">
+    <input type="gz.msgs.Int32" topic="/keyboard/keypress">
+        <match field="data">16777248</match>
+    </input>
+    <output type="gz.msgs.Twist" topic="/model/marble_husky_sensor_config_1/cmd_vel">
+        linear: {x: 0 y: 0 z: 0} angular: {x: 0 y: 0 z: 0}
     </output>
 </plugin>
 </world>
 </sdf>
-
